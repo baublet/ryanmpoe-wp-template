@@ -1,0 +1,74 @@
+// main: main.less
+
+/* Intended for various pages that need special styling.
+-------------------------------------------------------------- */
+
+/* =Virginia Freedmen's Bureau Project
+-------------------------------------------------------------- */
+.fbreport {
+    margin-top:2rem;
+    h2 {
+        text-align:center;
+    }
+    .letter-date, .to {
+        margin-bottom:1rem;
+    }
+    .from {
+        padding-left:4rem;
+        .signoff {
+            display:block;
+            margin-left:-2rem;
+        }
+    }
+    .citation {
+        margin-top:4rem;
+        font-size:.8em;
+        opacity:.7;
+        font-family:monospace;
+        line-height:1em;
+        &:before{
+            content:"Citation: ";
+            font-weight:bold;
+        }
+    }
+}
+
+.fbproject-head {
+    margin-bottom:1rem;
+    border-left:15px solid @color-not-black;
+    padding-left:2rem;
+    .entry-title {
+        margin:0 0 .2rem;
+        padding:0;
+        text-align:left;
+    }
+    p {
+        margin:0;
+        padding:0;
+        a {
+            font:1rem @lettering-header;
+            &:before{
+                content:"\00ab ";
+                padding-right:.2rem;
+                font-size:1.2rem;
+            }
+        }
+    }
+}
+
+.page-id-739 .post-739 .entry-content ul li{
+    margin-bottom:2rem;
+    list-style-type:none;
+    h2 {
+        font-size:1.2rem;
+        margin:0;
+    }
+    p {
+        margin:0;
+        padding:0;
+        font-size:.9rem;
+        line-height:.9rem;
+        display:block;
+        opacity:.5;
+    }
+}

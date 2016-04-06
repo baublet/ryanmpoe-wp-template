@@ -1,0 +1,98 @@
+// main: main.less
+
+/* =Single/Page
+-------------------------------------------------------------- */
+body.single {
+    header {
+        .entry-title {
+            margin-bottom:0;
+            text-align:center;
+        }
+        &.entry-header{
+            margin-bottom:3rem;
+        }
+        .entry-subtitle{
+            text-align:center;
+            text-transform:none;
+            font-size:1.1rem;
+            margin-top:.5rem;
+            line-height:1rem;
+        }
+        .entry-meta a {
+            background:@color-not-white;
+            padding:0 1rem;
+            border:1px solid #ddd;
+            border-top:0;
+            border-bottom:0;
+            color:#aaa;
+            &:hover{
+                color:@color-not-black;
+            }
+        }
+    }
+    .entry-meta {
+        text-align:center;
+        opacity:1;
+        margin-bottom:4rem;
+        &:before{
+            display:block;
+            content:" ";
+            height:1px;
+            width:1px;
+            overflow:hidden;
+            border-bottom:1px solid #ddd;
+            width:100%;
+            margin-bottom:-.65rem;
+        }
+        .categories {
+            background:@color-not-white;
+            padding:0 1rem;
+            border:1px solid #ddd;
+            border-top:0;
+            border-bottom:0;
+            a {
+                color:#aaa;
+                &:hover{
+                    color:@color-not-black;
+                }
+            }
+        }
+        time:before {
+            font:1.5rem "Genericons";
+            content: '\f307';
+            padding-right:.25rem;
+            margin-top:-.2rem;
+            display:inline-block;
+            vertical-align:middle;
+        }
+    }
+    article {
+        .entry-content {
+            margin-bottom:4rem;
+        }
+        .entry-summary{
+            padding:0;
+            margin-bottom:3rem;
+            font-size:1.4rem;
+        }
+    }
+}
+
+.entry-meta {
+	font:.78rem @lettering-header;
+	opacity:.6;
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+	text-transform:uppercase;
+	&:hover {
+		opacity:1;
+	}
+}
+.entry-footer {
+	text-align:center;
+}
+.entry-content, .entry-footer {
+	margin-bottom:4rem;
+}
+
+//body.single header .entry-meta a,body.single footer.entry-meta .categories{background:@color-not-white;padding:0 1em;border:1px solid #ddd;border-top:0;border-bottom:0}

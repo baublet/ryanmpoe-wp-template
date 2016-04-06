@@ -1,0 +1,252 @@
+// main: main.less
+
+.home .main {
+	padding: 0;
+}
+
+.multimedia .homeitem{
+    display:inline-block;
+    margin:0 1rem 1rem 0;
+    padding:0;
+    overflow:hidden;
+    width:300px;
+	max-width:100%;
+    height:300px;
+    border-radius:150px;
+    position:relative;
+    img{
+        border:0;
+        opacity:.4;
+        transition:.5s ease-in-out;
+        height:300px;
+        width:auto;
+    }
+    &:hover img{
+        opacity:1;
+        filter:blur(5px) grayscale(1);
+        -webkit-filter:blur(5px) grayscale(1);
+    }
+    .descriptor{
+        display:block;
+        width:300px;
+        position:absolute;
+        top: 50%;
+        left:0;
+        padding:.5rem;
+        text-align:center;
+        font:1rem @lettering-header;
+        color: @color-not-white;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+        opacity:0;
+        transition:opacity .2s ease-in-out;
+    }
+    &:hover .descriptor {
+        opacity:1;
+    }
+}
+
+/* =Main Page (homebox)
+-------------------------------------------------------------- */
+.post-323 > header:first-child{display:none;}
+.homebox {
+    margin-bottom:2rem;
+    padding-top:2rem;
+	padding-bottom:2rem;
+    position:relative;
+    overflow:hidden;
+    & > h1{
+        text-align:center;
+        margin-bottom:3rem;
+    }
+    &.about {
+		p {
+			font-size:.9rem;
+			line-height:1.2rem;
+			margin:0 0 2rem;
+			&:first-child{
+				margin:0;
+			}
+		}
+    }
+    .small-photo {
+        border-radius:5px;
+		@media only screen and (max-width: 600px) {
+			float:none;
+			margin:0 auto 2rem;
+			display:block;
+			width:100%;
+			max-width:100%;
+			height:auto;
+		}
+    }
+    &.blog {
+        background:@color-complementary-900;
+        color:@color-not-white;
+        -webkit-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
+        box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
+        a {
+            color:@color-not-white;
+            opacity:.5;
+            &:hover{
+                opacity:1;
+            }
+        }
+        article {
+			margin-bottom:3rem;
+			@media only screen and (min-width: 675px) {
+	            display:inline-block;
+	            width:50%;
+	            vertical-align:top;
+	            padding-right:1rem;
+	            z-index:10;
+	            position:relative;
+				margin-bottom:2rem;
+	            & ~ article {
+	                padding:0 0 0 1rem;
+	            }
+			}
+            .entry-content {
+                margin-bottom:1rem;
+            }
+            h1 {
+                font-size:2rem;
+                line-height:1.6rem;
+                margin-bottom:1rem;
+                a {
+                    color:@color-not-white;
+                    opacity:1;
+                    &:hover {
+                        color:@color-complementary-200;
+                    }
+                }
+            }
+            .entry-footer .categories{
+                margin-right:1rem;
+            }
+        }
+        .entry-meta {
+            margin-bottom:1rem;
+        }
+        .older {
+            text-align:center;
+            ul {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                li {
+                    margin-bottom:1rem;
+                    &:last-child{
+                        margin-bottom:0;
+                    }
+                    a {
+                        font:1.25rem @lettering-header;
+                        opacity:1;
+                        &:hover {
+                            color:@color-complementary-200;
+                        }
+                    }
+                    .date {
+                        font:.7rem @lettering-header;
+                        display:block;
+                        opacity:.75;
+                        text-transform:uppercase;
+                    }
+                }
+            }
+        }
+    }
+    &.multimedia{
+        background:@color-tertiary-500;
+        color:@color-not-white;
+        padding-top:4rem;
+        -webkit-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
+        box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
+        text-align:center;
+        a {
+            z-index:10;
+        }
+    }
+    &.publications{
+        font:1rem @lettering-header;
+        a {
+            color:@color-not-black;
+            &:hover{
+                color:@color-complementary-500;
+                text-decoration:underline;
+            }
+        }
+    }
+    &.thoughts {
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+            li:last-child:after{
+                display:none;
+            }
+        }
+        li{
+            position:relative;
+            padding-left:6rem;
+            margin-bottom:2rem;
+            p {
+                margin-bottom:0;
+            }
+            &:after{
+                display:block;
+                content:' ';
+                padding:1rem 0;
+                width:75%;
+                margin:0 auto;
+                border-bottom:1px dashed @color-not-black;
+            }
+            a.title{
+                position:absolute;
+                left:0;
+                top:-1rem;
+                font:5rem Genericons;
+                line-height:1;
+                color:@color-complementary-200;
+                &:hover{
+                    color:@color-complementary-500;
+                }
+                span {
+                    display:none;
+                }
+            }
+            &.quotations a.title:before{content: '\f106';}
+            &.thoughts a.title:before{content: '\f105';}
+            .attr{
+                display:block;
+                text-align:right;
+                padding:0 10%;
+                font:1rem @lettering-header;
+                a {
+                    color:@color-not-black;
+                    &:hover {
+                        text-decoration:underline;
+                    }
+                }
+            }
+            li.quotations .attr:before{content:'\2014 '}
+        }
+    }
+}
+
+.homebox.blog > h1,
+.homebox.multimedia > h1 {
+    font-size:1000%;
+    letter-spacing:-.15rem;
+    position:absolute;
+    left:-2rem;
+    top:2rem;
+    text-transform:uppercase;
+    opacity:.05;
+    z-index:5;
+    width:100%;
+    text-align:center;
+}
+.homebox.multimedia > h1 {
+    letter-spacing:-.75rem;
+    left:0;
+}
