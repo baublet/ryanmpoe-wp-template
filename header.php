@@ -28,9 +28,6 @@
   bloginfo( 'name' );
 
   ?></title>
-<script type="text/javascript" src="//use.typekit.net/wsc1zkx.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/masonry.pkgd.min.js"></script>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
 </head>
