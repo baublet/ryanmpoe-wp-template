@@ -151,9 +151,6 @@ blockquote {
     font-size: .8rem;
     text-indent: -2rem;
     padding-left: 2rem;
-    &:before {
-      content: "\2014 ";
-    }
   }
 }
 .entry-content p {
@@ -227,23 +224,9 @@ ul.biblio {
   border-bottom-right-radius: 5px;
   vertical-align: bottom;
   line-height: 2rem;
-  color: @color-not-white !important;
-  &:before {
-    font: 2rem "Genericons";
-    content: "\f416";
-    padding: .1rem;
-    margin: 0 .33rem 0 0;
-    display: inline-block;
-    vertical-align: middle;
-    color: @color-not-black;
-    background: @color-complementary-500;
-    border-right: 1px solid @color-not-white;
-  }
+  color: @color-not-white;
   &:hover {
     background: @color-complementary-500;
-    &:before {
-      color: @color-not-white;
-    }
   }
 }
 
@@ -327,25 +310,5 @@ ul.biblio {
   }
   .widget.text-4 h1.widget-title {
     display: none;
-  }
-}
-.categories {
-  a:first-child:before {
-    font: 1.5rem genericons;
-    content: "\f301";
-    padding-right: .25rem;
-    margin-top: -.2rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-.permalink {
-  a:first-child:before {
-    font: 1.3rem genericons;
-    content: "\f107";
-    padding-right: .25rem;
-    margin-top: -.2rem;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
