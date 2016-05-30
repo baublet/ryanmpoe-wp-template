@@ -67,7 +67,7 @@ html {
           left: 50%;
           right: 50%;
           opacity: 0;
-          transition: all .25s cubic-bezier(.03,.87,0,1);
+          transition: none
         }
         &:hover {
           color: @color-tertiary-500;
@@ -75,6 +75,7 @@ html {
             right: 0;
             left: 0;
             opacity: 1;
+            transition: all .25s cubic-bezier(.03,.87,0,1);
           }
         }
       }

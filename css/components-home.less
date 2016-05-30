@@ -17,14 +17,15 @@
     img{
         border:0;
         opacity:.4;
-        transition:.5s ease-in-out;
+        transition: transform 5s ease-in-out,
+                    opacity 2.5s ease-in-out;
         height:300px;
         width:auto;
+        transform: translate3d(0, 0, 0);
     }
     &:hover img{
         opacity:1;
-        filter:blur(5px) grayscale(1);
-        -webkit-filter:blur(5px) grayscale(1);
+        transform: scale3d(1.1, 1.1, 1.5);
     }
     .descriptor{
         display:block;
@@ -53,7 +54,7 @@
     padding-top:2rem;
 	padding-bottom:2rem;
     position:relative;
-    overflow:hidden;
+    overflow: hidden;
     & > h1{
         text-align:center;
         margin-bottom:3rem;
@@ -84,6 +85,10 @@
         color:@color-not-white;
         -webkit-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
         box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
         a {
             color:@color-not-white;
             opacity:.5;
@@ -95,9 +100,8 @@
 			margin-bottom:3rem;
 			@media only screen and (min-width: 675px) {
 	            display:inline-block;
-	            width:50%;
+	            width:45%;
 	            vertical-align:top;
-	            padding-right:1rem;
 	            z-index:10;
 	            position:relative;
 				margin-bottom:2rem;
@@ -128,6 +132,7 @@
             margin-bottom:1rem;
         }
         .older {
+            width: 100%;
             text-align:center;
             ul {
                 list-style-type:none;
@@ -159,7 +164,6 @@
         background:@color-tertiary-500;
         color:@color-not-white;
         padding-top:4rem;
-        -webkit-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
         box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .45);
         text-align:center;
         a {
@@ -235,13 +239,13 @@
 
 .homebox.blog > h1,
 .homebox.multimedia > h1 {
-    font-size:1000%;
-    letter-spacing:-.15rem;
+    font-size:800%;
+    letter-spacing:-1rem;
     position:absolute;
     left:-2rem;
-    top:2rem;
+    top:1.75rem;
     text-transform:uppercase;
-    opacity:.05;
+    opacity:.15;
     z-index:5;
     width:100%;
     text-align:center;
