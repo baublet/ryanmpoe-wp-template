@@ -507,6 +507,7 @@ html {
 h1,
 h2,
 h3 {
+  letter-spacing: -0.03rem;
   font: 2rem Montserrat, "Trebuchet MS", sans-serif;
   line-height: 1.6rem;
   font-weight: 700;
