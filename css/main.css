@@ -1007,14 +1007,6 @@ body.single .entry-meta .categories a {
 body.single .entry-meta .categories a:hover {
   color: #2A2829;
 }
-body.single .entry-meta time:before {
-  font: 1.5rem "Genericons";
-  content: '\f307';
-  padding-right: .25rem;
-  margin-top: -0.2rem;
-  display: inline-block;
-  vertical-align: middle;
-}
 body.single article .entry-content {
   margin-bottom: 4rem;
 }
