@@ -370,7 +370,7 @@ html {
 }
 html {
   font: 14px Lora, Georgia, serif;
-  line-height: 1.4rem;
+  line-height: 1.6em;
   color: #2A2829;
   background: #fefefe;
 }
@@ -382,7 +382,6 @@ html {
 @media only screen and (min-width: 800px) {
   html {
     font-size: 16px;
-    line-height: 1.4rem;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -606,20 +605,20 @@ ul.biblio li {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
-.download {
+a.download {
   font: 1rem Montserrat, "Trebuchet MS", sans-serif;
-  background: #2A2829;
   display: inline-block;
-  padding: 0 .7rem 0 0;
+  padding: .5rem;
+  margin-left: -0.5rem;
   overflow: hidden;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   vertical-align: bottom;
   line-height: 2rem;
-  color: #fefefe;
+  color: #2A2829;
+  border: 1px solid #2A2829;
 }
-.download:hover {
-  background: #b31d09;
+a.download:hover {
+  color: #fefefe;
+  background: #2A2829;
 }
 .follow-me {
   display: flex;

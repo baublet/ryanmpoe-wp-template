@@ -1,7 +1,7 @@
 // main: main.less
 html {
   font: 14px @lettering-main;
-  line-height: 1.4rem;
+  line-height: 1.6em;
   color: @color-not-black;
   background: @color-not-white;
   @media only screen and (min-width: 600px) {
@@ -9,7 +9,6 @@ html {
   }
   @media only screen and (min-width: 800px) {
     font-size: 16px;
-    line-height: 1.4rem;
   }
   @media only screen and (min-width: 1000px) {
     font-size: 17px;
@@ -214,19 +213,19 @@ ul.biblio {
     margin-bottom: 1rem;
   }
 }
-.download {
+a.download {
   font: 1rem @lettering-header;
-  background: @color-not-black;
   display: inline-block;
-  padding: 0 .7rem 0 0;
+  padding: .5rem;
+  margin-left: -.5rem;
   overflow: hidden;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   vertical-align: bottom;
   line-height: 2rem;
-  color: @color-not-white;
+  color: @color-not-black;
+  border: 1px solid @color-not-black;
   &:hover {
-    background: @color-complementary-500;
+    color: @color-not-white;
+    background: @color-not-black;
   }
 }
 
