@@ -145,7 +145,7 @@ function rmpoe_scripts() {
   wp_dequeue_script('style');
     wp_deregister_script('style');
 
-  wp_enqueue_style('compressed', get_template_directory_uri() . '/css/compressed.css');
+  wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
   wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Montserrat:700,400|Lora:400,400italic,700');
 }
 add_action('wp_enqueue_scripts', 'rmpoe_scripts');
