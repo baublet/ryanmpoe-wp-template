@@ -547,9 +547,6 @@ blockquote .attr {
   text-indent: -2rem;
   padding-left: 2rem;
 }
-blockquote .attr:before {
-  content: "\2014 ";
-}
 .entry-content p {
   margin-bottom: 2rem;
 }
@@ -619,24 +616,10 @@ ul.biblio li {
   border-bottom-right-radius: 5px;
   vertical-align: bottom;
   line-height: 2rem;
-  color: #fefefe !important;
-}
-.download:before {
-  font: 2rem "Genericons";
-  content: "\f416";
-  padding: .1rem;
-  margin: 0 .33rem 0 0;
-  display: inline-block;
-  vertical-align: middle;
-  color: #2A2829;
-  background: #b31d09;
-  border-right: 1px solid #fefefe;
+  color: #fefefe;
 }
 .download:hover {
   background: #b31d09;
-}
-.download:hover:before {
-  color: #fefefe;
 }
 .follow-me {
   display: flex;
@@ -720,22 +703,6 @@ ul.biblio li {
 }
 .footer .widget.text-4 h1.widget-title {
   display: none;
-}
-.categories a:first-child:before {
-  font: 1.5rem genericons;
-  content: "\f301";
-  padding-right: .25rem;
-  margin-top: -0.2rem;
-  display: inline-block;
-  vertical-align: middle;
-}
-.permalink a:first-child:before {
-  font: 1.3rem genericons;
-  content: "\f107";
-  padding-right: .25rem;
-  margin-top: -0.2rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 .home .main {
   padding: 0;
@@ -957,12 +924,6 @@ ul.biblio li {
 .homebox.thoughts li a.title span {
   display: none;
 }
-.homebox.thoughts li.quotations a.title:before {
-  content: '\f106';
-}
-.homebox.thoughts li.thoughts a.title:before {
-  content: '\f105';
-}
 .homebox.thoughts li .attr {
   display: block;
   text-align: right;
@@ -974,9 +935,6 @@ ul.biblio li {
 }
 .homebox.thoughts li .attr a:hover {
   text-decoration: underline;
-}
-.homebox.thoughts li li.quotations .attr:before {
-  content: '\2014 ';
 }
 .homebox.blog > h1,
 .homebox.multimedia > h1 {
