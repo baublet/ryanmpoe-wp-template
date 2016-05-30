@@ -500,6 +500,10 @@ html {
   }
 }
 /* General Typography */
+.screen-reader-text {
+  display: none;
+  visibility: hidden;
+}
 h1,
 h2,
 h3 {
@@ -632,6 +636,18 @@ ul.biblio li {
 }
 .download:hover:before {
   color: #fefefe;
+}
+.follow-me {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.follow-me a {
+  margin: 0 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.follow-me a:hover {
+  color: rgba(0, 0, 0, 0.9);
 }
 /* =Footer
 -------------------------------------------------------------- */
@@ -1138,43 +1154,49 @@ body.single article .entry-summary {
 }
 .multimedia {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .multimedia .item {
   display: inline-block;
-  margin: 0 1rem 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 0;
   overflow: hidden;
   position: relative;
-  max-width: 350px;
+  width: 49%;
   height: auto;
   vertical-align: top;
   box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.55);
-  border-radius: 100%;
+  line-height: 0;
 }
 .multimedia .item img {
   border: 0;
   opacity: .75;
-  height: 350px;
-  width: auto;
+  width: 100%;
+  height: auto;
+  transition: transform 5s ease-in-out;
 }
 .multimedia .item:hover img {
   opacity: 1;
+  transform: scale3d(1.1, 1.1, 1.5);
 }
 .multimedia .item .descriptor {
-  display: block;
-  width: 100%;
+  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 0;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   padding: .5rem;
   text-align: center;
   font: 1rem Montserrat, "Trebuchet MS", sans-serif;
   color: #fefefe;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
 }
 .multimedia.gallery a {
   display: inline-block;
-  max-width: 300px;
+  width: 300px;
   height: auto;
   margin: 0 1rem 1rem 0;
   padding: 0;
@@ -1247,11 +1269,4 @@ div.wp-caption.alignleft img {
   border: 0;
   padding: 0;
   border-bottom: 0.5em solid #b31d09;
-}
-@font-face {
-  font-family: "Genericons";
-  src: url("http://ryanmpoe.com/wordpress/wp-content/themes/rmp/icons/genericons-regular-webfont.eot");
-  src: url("http://ryanmpoe.com/wordpress/wp-content/themes/rmp/icons/genericons-regular-webfont.eot?#iefix") format('embedded-opentype'), url("http://ryanmpoe.com/wordpress/wp-content/themes/rmp/icons/genericons-regular-webfont.woff") format('woff'), url("http://ryanmpoe.com/wordpress/wp-content/themes/rmp/icons/genericons-regular-webfont.ttf") format('truetype'), url("http://ryanmpoe.com/wordpress/wp-content/themes/rmp/icons/genericons-regular-webfont.svg#genericonsregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
 }

@@ -107,6 +107,7 @@ html {
   }
 }
 /* General Typography */
+.screen-reader-text { display: none; visibility: hidden }
 h1,
 h2,
 h3 {
@@ -243,6 +244,20 @@ ul.biblio {
       color: @color-not-white;
     }
   }
+}
+
+.follow-me {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  a {
+    margin: 0 1rem;
+    color: rgba(0,0,0,.5);
+    &:hover {
+      color: rgba(0,0,0,.9);
+    }
+  }
+  
 }
 /* =Footer
 -------------------------------------------------------------- */

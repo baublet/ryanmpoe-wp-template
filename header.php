@@ -29,6 +29,7 @@
 
   ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script src="https://use.fontawesome.com/99084d998b.js"></script>
 <?php wp_head(); ?>
 </head>
 
