@@ -41,7 +41,7 @@
 
 <script type="text/javascript">
   // Reload Masonry layout when an image loads
-  var msnry = new Masonry(".grid", { itemSelector: '.item', gutter: 20 })
+  var msnry = new Masonry(".grid,.gallery", { itemSelector: '.item', gutter: 10 })
   var imgLoad = imagesLoaded("body")
   imgLoad.on( 'progress', function( instance, image ) {
     msnry.layout()
