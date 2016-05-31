@@ -112,18 +112,23 @@ h2,
 h3 {
   letter-spacing: -.03rem;
   font: 2rem @lettering-header;
-  line-height: 1.6rem;
+  line-height: 1.2em;
   font-weight: 700;
   margin: 0 0 @spacing-small;
   padding: 0;
 }
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
 h4 {
-  font-size: 1.7rem;
-  line-height: 1.4rem;
+  font-size: 1rem;
 }
 h5 {
-  font-size: 1.5rem;
-  line-height: 1.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 hgroup h1 {
   .title {
@@ -234,7 +239,7 @@ a.download {
   justify-content: center;
   font-size: 3rem;
   a {
-    margin: 0 1rem;
+    margin: 0 .5rem;
     color: rgba(0,0,0,.5);
     &:hover {
       color: rgba(0,0,0,.9);
@@ -245,6 +250,10 @@ a.download {
 /* =Footer
 -------------------------------------------------------------- */
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-top: 2rem;
   padding-bottom: 10rem;
   background: @color-not-black;
@@ -276,7 +285,6 @@ a.download {
   }
   @media only screen and (min-width: 576px) {
     .widget-area {
-      display: inline-block;
       width: 35%;
       vertical-align: top;
     }
