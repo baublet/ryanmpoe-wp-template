@@ -29,7 +29,9 @@
 
   ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<script src="https://use.fontawesome.com/99084d998b.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script async src="https://use.fontawesome.com/99084d998b.js"></script>
+<script async src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 <?php wp_head(); ?>
 </head>
 

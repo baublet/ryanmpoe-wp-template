@@ -39,5 +39,14 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript">
+  // Reload Masonry layout when an image loads
+  var msnry = new Masonry(".grid", { itemSelector: '.item', gutter: 20 })
+  var imgLoad = imagesLoaded("body")
+  imgLoad.on( 'progress', function( instance, image ) {
+    msnry.layout()
+  });
+</script>
+
 </body>
 </html>
