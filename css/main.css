@@ -771,25 +771,28 @@ a.download:hover {
   margin-bottom: 3rem;
 }
 .homebox.about img {
-  width: 300px;
+  width: 350px;
   height: auto;
   max-width: 100%;
+}
+.homebox.about > div {
+  width: 100%;
 }
 @media only screen and (min-width: 600px) {
   .homebox.about {
     display: flex;
   }
-  .homebox.about div {
+  .homebox.about img {
+    max-width: 50%;
+  }
+  .homebox.about > div {
+    padding-left: 2rem;
     width: 50%;
   }
 }
 .homebox.about p {
   font-size: .9rem;
-  line-height: 1.2rem;
   margin: 0 0 2rem;
-}
-.homebox.about p:first-child {
-  margin: 0;
 }
 .homebox .small-photo {
   border-radius: 5px;
@@ -962,16 +965,12 @@ a.download:hover {
   letter-spacing: -1rem;
   position: absolute;
   left: -2rem;
-  top: 1.75rem;
+  top: -2.3rem;
   text-transform: uppercase;
   opacity: .15;
   z-index: 5;
   width: 100%;
   text-align: center;
-}
-.homebox.multimedia > h1 {
-  letter-spacing: -0.75rem;
-  left: 0;
 }
 /* =Single/Page
 -------------------------------------------------------------- */

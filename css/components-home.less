@@ -61,23 +61,26 @@
     }
     &.about {
         img {
-            width: 300px;
+            width: 350px;
             height: auto;
             max-width: 100%;
         }
+        > div {
+            width: 100%;
+        }
         @media only screen and (min-width: 600px) {
           display: flex;
-          div {
+          img {
+              max-width: 50%;
+          }
+          > div {
+              padding-left: 2rem;
               width: 50%;
           }
         }
 		p {
 			font-size:.9rem;
-			line-height:1.2rem;
 			margin:0 0 2rem;
-			&:first-child{
-				margin:0;
-			}
 		}
     }
     .small-photo {
@@ -251,14 +254,10 @@
     letter-spacing:-1rem;
     position:absolute;
     left:-2rem;
-    top:1.75rem;
+    top:-2.3rem;
     text-transform:uppercase;
     opacity:.15;
     z-index:5;
     width:100%;
     text-align:center;
-}
-.homebox.multimedia > h1 {
-    letter-spacing:-.75rem;
-    left:0;
 }
