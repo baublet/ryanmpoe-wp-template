@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    .item {
+    .item, &.gallery a {
         display:inline-block;
         margin:0 0 1rem 0;
         padding:0;
@@ -42,30 +42,13 @@
         }
     }
     &.gallery {
-        a {
-            display:inline-block;
-            width:300px;
-            height: auto;
-            margin:0 1rem 1rem 0;
-            padding:0;
-            vertical-align:top;
-            box-shadow:0 0 15px 0 rgba(50, 50, 50, 0.55);
-            border-radius:3px;
-            overflow:hidden;
-            max-height:200px;
-            img {
-                margin-bottom:-1em;
-                width:100%;
-                height:auto;
-                opacity:.75;
-            }
-            &:hover{
-                box-shadow:0 0 15px 0 rgba(50, 50, 50, 1);
-                img{
-                    opacity:1;
-                }
-            }
-        }
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    &.gallery a {
+        margin: .5rem;
+        max-width: 50%;
+        width: 250px;
     }
 }
 
