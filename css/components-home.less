@@ -60,6 +60,17 @@
         margin-bottom:3rem;
     }
     &.about {
+        img {
+            width: 300px;
+            height: auto;
+            max-width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+          display: flex;
+          div {
+              width: 50%;
+          }
+        }
 		p {
 			font-size:.9rem;
 			line-height:1.2rem;

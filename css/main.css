@@ -770,6 +770,19 @@ a.download:hover {
   text-align: center;
   margin-bottom: 3rem;
 }
+.homebox.about img {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .homebox.about {
+    display: flex;
+  }
+  .homebox.about div {
+    width: 50%;
+  }
+}
 .homebox.about p {
   font-size: .9rem;
   line-height: 1.2rem;
