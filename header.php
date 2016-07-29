@@ -32,6 +32,7 @@
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script async src="https://use.fontawesome.com/99084d998b.js"></script>
 <script async src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <?php wp_head(); ?>
 </head>
 
