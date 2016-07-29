@@ -40,12 +40,17 @@
 <?php wp_footer(); ?>
 
 <script type="text/javascript">
+  // Loadour syntax highlighter
+  hljs.initHighlightingOnLoad();
+
   // Reload Masonry layout when an image loads
-  var msnry = new Masonry(".grid,.gallery", { itemSelector: '.item', gutter: 10 })
-  var imgLoad = imagesLoaded("body")
-  imgLoad.on( 'progress', function( instance, image ) {
-    msnry.layout()
-  });
+  if (document.querySelectorAll(".grid, .gallery")) {
+	  var msnry = new Masonry(".grid, .gallery", { itemSelector: '.item', gutter: 10 })
+	  var imgLoad = imagesLoaded("body")
+	  imgLoad.on( 'progress', function( instance, image ) {
+	    msnry.layout()
+	  });
+  }
 </script>
 
 </body>
